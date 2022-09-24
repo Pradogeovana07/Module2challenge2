@@ -1,0 +1,39 @@
+.container {
+    border: 5px solid black;
+   display: block;
+   float: left;
+    
+}
+
+.myname h1{
+    border: 5px solid blue;   
+    float:left;
+    
+
+}
+.toplinks {
+    border: 5px solid pink;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.toplinks ul li {
+    /* border: 5px dashed red; */
+    clear: right;
+    margin-left: 700px;
+    
+    float: left;
+    list-style: none;
+    
+    
+   
+    
+}
+
+a{
+    text-decoration: none;
+    display: flex;
+    float: left;
+    
+}
