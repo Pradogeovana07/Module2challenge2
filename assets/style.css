@@ -1,8 +1,15 @@
 *{
-box-sizing: border-box;    
+box-sizing: border-box;  
+  
+}
+.scroll {
+    overflow: hidden;
+    
 }
 body{
     margin:0;
+    
+    
 }
 header {
 display: flex;
@@ -13,30 +20,49 @@ text-align: center;
 font-size: 30px;
 }
 .nav {
-    display: flex;
-    overflow: hidden;
-    background-color: #333;
-    justify-content: center;
+    
+overflow: hidden;
+background-color: #333;
+justify-content: center;
+ 
 }
 
 .nav a {
-float: left;
 display: flex;
-flex-direction: column;
+flex-direction: column; 
+float: left;
 color:#f2f2f2;
 font-family:Georgia, 'Times New Roman', Times, serif; 
 letter-spacing: 5px;
 padding: 18px;
 text-decoration: none;
 position: relative;
-left:200px;
-text-align: center;
+left: 34%;
+
 }
 span{
     color: hotpink;
     font-size: 45px;
 }
 
+.box1 {
+    display: block;
+    position:fixed;
+    left:1000px;
+    width: 40%;
+    height: 400px;
+    border: 5px solid black;
+
+}
+.box2 {
+    display:block;
+    position: fixed;
+    border: 5px solid black;
+    left:1000px;
+    top: 800px;
+    width: 40%;
+    height: 400px;
+}
 
 
 
