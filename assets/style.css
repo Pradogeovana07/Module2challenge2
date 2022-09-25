@@ -13,9 +13,10 @@ text-align: center;
 font-size: 30px;
 }
 .nav {
+    display: flex;
     overflow: hidden;
     background-color: #333;
-    
+    justify-content: center;
 }
 
 .nav a {
@@ -23,12 +24,13 @@ float: left;
 display: flex;
 flex-direction: column;
 color:#f2f2f2;
-    
+font-family:Georgia, 'Times New Roman', Times, serif; 
 letter-spacing: 5px;
-word-spacing: 1px;
 padding: 18px;
 text-decoration: none;
-justify-content: center;
+position: relative;
+left:200px;
+text-align: center;
 }
 span{
     color: hotpink;
