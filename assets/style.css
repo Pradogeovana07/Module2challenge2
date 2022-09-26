@@ -58,63 +58,37 @@ header {
     font-size: large;
 }
 
-.about-me h2 {
-    border: 2px solid rgb(119, 13, 66);
-    display: inline-block;
-    position: relative;
-    justify-content: center;
-    text-align:center;
-    bottom:140px;
-    left: 750px;
-    width:100%;
-    
-
-}
 span {
     color: hotpink;
     font-size: 45px;
     
 }
-.topcontainer {
-    border: 5px solid rgb(119, 27, 39); 
-    display: flex;
-    flex-direction: row;
-    height:500px;
-     
-}
-
-
-h2 {
-    border: 3px solid rgb(65, 36, 194);
-}
-
-.largebox {
-    position: relative;
-    top: -0x;
-    right: -500px;
-    height: 150px;
-    width:100%;
+.work {
+    width: 15%;
+    padding-right: 10px;
+    border-right: 3px solid white;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    display: inline-block;
+    position: static;
+    justify-content: center;
+    text-align: right;
+    color: rgb(66, 9, 9);  
+    border: 2px solid red;
     
-    border: 3px solid purple;
 }
-.smallbox1 {
-    position: relative;
-    height: 150px;
-    width:100%;
-    bottom:-150px;
-    
-    margin-top: 5px;
-    border: 3px solid rgb(15, 178, 51);
-}
-.smallbox2 {
-    position: relative;
-    top: 0px;
+
+.bigbox{
+    Border: 5px solid black;
     height: 300px;
-    width:900px;
+    width: 100%;
+    padding:0;
+    position:relative;
     
-    margin-left:100px;
-    border: 3px solid rgb(211, 144, 30);
 }
+
+
+
 
 /* .right-column {
     display: flex;
