@@ -1,7 +1,23 @@
+:root {
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --pink: rgb(255 105 180);
+    --shadow: 0 4px 8px rgba(104, 104, 104, 0.8)
+}
+
+html{ 
+    box-sizing: border-box;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
+}
+
 body {
-    margin: 0;
-
-
+    background: #ccc;
+    margin: 30px 0px;
+    line-height: 1.4;
+    box-sizing: border-box;
 }
 
 header {
@@ -9,11 +25,13 @@ header {
     flex-direction: column;
     background-color: #d7d1d1;
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     width: 100%;
+    padding-top: 40px;
     position: sticky;
     top: 0px;
     left:0px;
+    box-shadow: 20px 20px 50px 10px rgb(175, 134, 141) inset;
 }
 
 .nav {
@@ -22,40 +40,53 @@ header {
     background-color: #333;
     justify-content: center;
     flex-direction: row;
-    
-
+    box-shadow: var(--shadow);
 }
 
 .nav a {
     display: flex;
     color: #f2f2f2;
-    font-family: Georgia, 'Times New Roman', Times, serif;
     letter-spacing: 5px;
-    padding: 18px;
+    padding: 11px;
     text-decoration: none;
+    text-transform: uppercase;
     position: relative;
+    font-size: 20px;
+    margin-right: 60px;
+}
 
+.about-me-container {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 6px solid var(--shadow);
+    box-shadow: var(--shadow);
+    
+}
+
+.profilepic {
+    height: 290px;
+    width: 300px;
+    margin:5px 25px 5px 25px;
+    background-image: url(profilepic.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    box-shadow: var(--shadow);
 
 }
 
-
-
-
-.about-me {
-    border: 3px solid hotpink;
-    display: flex;
-    
+.aboutme {
+    height: 100%;
+    width: 70%;
+    margin-left: 32px;
     align-items: center;
-    justify-content: end;
-    height: 305px;
-    padding:30px;
-    margin-top: 50px;
-    overflow: hidden;
-    position:static;
-    
-    text-indent: 15px;
-    line-height: 30px;
-    font-size: large;
+    justify-content: center;
+    }
+
+p {
+    margin-top: 55px;
 }
 
 span {
@@ -63,90 +94,199 @@ span {
     font-size: 45px;
     
 }
+
+.bigbox {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 520px;
+}
+.bigbox a {
+    color: var(--dark);
+}
+
+.left {
+    height: 100%;
+    width: 384px;
+    text-align: center;
+    align-items: center;
+    
+}
+
 .work {
-    width: 15%;
-    padding-right: 10px;
-    border-right: 3px solid white;
+    align-self: center;
     padding-top: 200px;
     padding-bottom: 200px;
-    display: inline-block;
-    position: static;
-    justify-content: center;
-    text-align: right;
-    color: rgb(66, 9, 9);  
-    border: 2px solid red;
-    
+    margin-top: 40px;
+    border-right: 6px solid var(--dark);
 }
 
-.bigbox{
-    Border: 5px solid black;
-    height: 300px;
+.right {
+    height: 500px;
+    width: 60%;
+    margin-left: 130px;
+}
+
+.row1 {
+    width:100%;
+    height: 290px;
+    margin-bottom: 20px;
+    border: none;
+    background-image: url(Javascript.jpg);
+    background-size: cover;
+}
+
+.h2row1 {
+    background-color: var(--light);
+    width: 300px;
+    font-size: 45px;
+    text-align: center;
+}
+
+.row2 {
     width: 100%;
-    padding:0;
-    position:relative;
-    
-}
-
-
-
-
-/* .right-column {
+    height: 200px;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 300px;
-    border: 5px solid rgb(204, 60, 60);
-} */
-/*large box parent*/
-/* .large-icon {  
+    box-shadow: var(--shadow);
+}
+
+.box1 {
+    width: 50%;
+    height: 200px;
+    margin-right: 20px;
+    background-image: url(css.jpg);
+    background-size: cover;
+    box-shadow: var(--shadow);
+
+    
+}
+
+.box1header {
+    font-size: 34px;
+    width:100px;
+    text-align: center;
+    background-color: var(--light);
+    
+}
+
+.box2 {
+    width: 50%;
+    height: 200px;
+    background-image: url(html.jpg);
+    background-size: cover;
+    box-shadow: var(--shadow);
+}
+.box2header {
+    background-color: var(--light);
+    font-size: 34px;
+    width:100px;
+    text-align: center;
+    
+}
+.contactme-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 300px;
+    margin-top: 50px;
+    border: none;
+}
+.left-contactme {
+    height: 90%;
+    width: 378px;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+    border-right: 6px solid var(--dark);
+}
+.left-contactme h2 {
+    margin-top: 180px;
+}
+.right-contactme {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    float: right;
-    
-    
-} */
-/*large box child*/
-/* .box0 {
-    display: block;
-    width: 45%;
-    height: 400px;
-    border: 5px solid rgb(40, 168, 55);
+    justify-content: space-around;
+    height: 100%;
+    width: 1000px;
+    margin-left: 190px;
+    border: none;
 }
-/*small box parent*/
-/* .small-icon {
+.top-contactme {
+    height: 50%;
+    width: 100%;
+    height: 50px;
+    margin-bottom: -300px;
+    
+}
+.bottom-contactme {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-end;
-    float: right;
-} */
-/*small box child 1*/
-/* .box1 {
-    display: block;
-    width: 20%;
-    height: 400px;
-    border: 5px solid rgb(112, 28, 28);
-
-} */
-/*small box child 2*/
-/* .box2 {
-    display: block;
-    border: 5px solid rgb(62, 19, 215);
-    width: 20%;
-    height: 400px;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: -115px;
+    border: none;
 }
-.aside {
-    height: 800px;
-    width:300px;
-    border: 2px solid blue;
-    float: left;
-    position: absolute;
-    top: 218px;
+#cellphone {
     
-} */ 
+    height: 50px;
+    font-size: 16px;
+    text-align: center;
+    
+}
+#email {
+     
+    width: 260px;
+    font-size: 16px;
+    text-align: center;
+    
+    
+}
+.bottom-contactme a:link {
+    color: var(--dark)
+}
+.bottom-contactme a:hover {
+    color: var(--pink);
+}
+#github {
+    
+    height:20px;
+    font-size: 16px;
+}
+.nav a:hover {
+    color: var(--pink);
+}
+
+a:link {
+    text-decoration: none;
+     
+}
+.bigbox a:link {
+    color: var(--dark);
+}
+
+.bigbox a:hover {
+    color: var(--pink);
+}
+
+/* phone icon */
+.fa-solid {
+    
+    padding-left: 20px;
+
+}
+/* email icon */
+.fa-regular {
+     
+    margin-left: 406px;
+}
+/* github icon */
+.fa-brands {
+    
+    margin-left: 400px;
+}
 
 @media (max-width: 575px) {
     * {
@@ -154,8 +294,6 @@ span {
         align-items: center;
     }
 }
-
-
 
 @media screen and (max-width:575px){
 .about-me  {flex-direction: column;
