@@ -1,3 +1,4 @@
+
 :root {
     --primary: #ddd;
     --dark: #333;
@@ -69,11 +70,12 @@ header {
 .profilepic {
     height: 290px;
     width: 300px;
-    margin:5px 25px 5px 25px;
+    margin:15px 25px 15px 25px;
     background-image: url(profilepic.png);
     background-size:contain;
     background-repeat: no-repeat;
     box-shadow: var(--shadow);
+    flex-shrink: 0;
 
 }
 
@@ -83,6 +85,7 @@ header {
     margin-left: 32px;
     align-items: center;
     justify-content: center;
+    overflow-y:hidden;
     }
 
 p {
@@ -92,7 +95,6 @@ p {
 span {
     color: hotpink;
     font-size: 45px;
-    
 }
 
 .bigbox {
@@ -101,6 +103,7 @@ span {
     flex-direction: row;
     height: 520px;
 }
+
 .bigbox a {
     color: var(--dark);
 }
@@ -110,7 +113,6 @@ span {
     width: 384px;
     text-align: center;
     align-items: center;
-    
 }
 
 .work {
@@ -158,8 +160,6 @@ span {
     background-image: url(css.jpg);
     background-size: cover;
     box-shadow: var(--shadow);
-
-    
 }
 
 .box1header {
@@ -167,7 +167,6 @@ span {
     width:100px;
     text-align: center;
     background-color: var(--light);
-    
 }
 
 .box2 {
@@ -177,13 +176,14 @@ span {
     background-size: cover;
     box-shadow: var(--shadow);
 }
+
 .box2header {
     background-color: var(--light);
     font-size: 34px;
     width:100px;
     text-align: center;
-    
 }
+
 .contactme-container {
     display: flex;
     flex-direction: row;
@@ -192,6 +192,7 @@ span {
     margin-top: 50px;
     border: none;
 }
+
 .left-contactme {
     height: 90%;
     width: 378px;
@@ -200,9 +201,11 @@ span {
     margin-top: 20px;
     border-right: 6px solid var(--dark);
 }
+
 .left-contactme h2 {
     margin-top: 180px;
 }
+
 .right-contactme {
     display: flex;
     flex-direction: column;
@@ -212,6 +215,7 @@ span {
     margin-left: 190px;
     border: none;
 }
+
 .top-contactme {
     height: 50%;
     width: 100%;
@@ -219,6 +223,7 @@ span {
     margin-bottom: -300px;
     
 }
+
 .bottom-contactme {
     display: flex;
     flex-direction: row;
@@ -229,40 +234,41 @@ span {
     margin-bottom: -115px;
     border: none;
 }
+
 #cellphone {
     
     height: 50px;
     font-size: 16px;
     text-align: center;
-    
 }
+
 #email {
-     
     width: 260px;
     font-size: 16px;
     text-align: center;
-    
-    
 }
+
 .bottom-contactme a:link {
     color: var(--dark)
 }
+
 .bottom-contactme a:hover {
     color: var(--pink);
 }
+
 #github {
-    
     height:20px;
     font-size: 16px;
 }
+
 .nav a:hover {
     color: var(--pink);
 }
 
 a:link {
     text-decoration: none;
-     
 }
+
 .bigbox a:link {
     color: var(--dark);
 }
@@ -273,30 +279,83 @@ a:link {
 
 /* phone icon */
 .fa-solid {
-    
     padding-left: 20px;
-
 }
+
 /* email icon */
 .fa-regular {
-     
-    margin-left: 406px;
+     margin-left: 406px;
 }
+
 /* github icon */
 .fa-brands {
-    
     margin-left: 400px;
 }
 
-@media (max-width: 575px) {
-    * {
+
+
+
+/* ----------media queries--------- */
+/* @media  screen and (max-width: 814px) {
+    .about-me-container {
+        display:flex;
         flex-direction: column;
+        box-sizing: border-box;
+        width: 50%;
+    }
+         
+
+    .aboutme {
+        width:50%;
+    }
+    
+}
+@media  screen and (max-width: 1000px) {
+    .about-me-container {
+        display:flex;
+        flex-direction: row;
+        width: 50%;
+
+      
+}
+@media  screen and (min-width: 814px) {
+    *{
+        flex-shrink: 0;
+    } */
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+ @media screen and (max-width: 575px) {
+    .about-me-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+@media screen and (min-width: 751px) {
+    .paragraph {
+        display: flex;
+        flex-direction: column;
+        flex-flow: column nowrap;
         align-items: center;
     }
 }
 
 @media screen and (max-width:575px){
-.about-me  {flex-direction: column;
-    height:1000px;
+.paragraph  {flex-direction: column;
+    display: flex;
+        flex-direction: column;
+        align-items: center;
 }
-}
+} 
