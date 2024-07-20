@@ -1,4 +1,4 @@
-# challenge2
+# Professional Portfolio
 Advanced CSS Challenge: Professional Portfolio. Building a web page from scratch.
 
 #User Story
